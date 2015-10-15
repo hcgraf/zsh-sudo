@@ -9,6 +9,7 @@
 # -------
 #
 # * Dongweiming <ciici123@gmail.com>
+# * Hagen Graf - added vicmd binding
 #
 # ------------------------------------------------------------------------------
 
@@ -23,3 +24,4 @@ sudo-command-line() {
 zle -N sudo-command-line
 # Defined shortcut keys: [Esc] [Esc]
 bindkey "\e\e" sudo-command-line
+bindkey -M vicmd '\e' sudo-command-line
